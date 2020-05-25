@@ -155,6 +155,13 @@ body {
   margin-bottom: 0;
   list-style-type: none;
 }
+@media (max-width: 500px) {
+  .nav nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .nav nav ul a {
   font-size: 0.875em;
   font-family: Noto Sans, sans-serif;
@@ -199,6 +206,14 @@ header {
   margin-left: 250px;
   margin-right: 250px;
 }
+@media (max-width: 500px) {
+  .about {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-left: 150px;
+  }
+}
 .about h1 {
   font-family: Noto Sans, sans-serif;
   font-size: 30px;
@@ -213,6 +228,11 @@ header {
   text-align: center;
   padding: 100px;
 }
+@media (max-width: 500px) {
+  .about p {
+    padding: 10px;
+  }
+}
 .about h3 {
   font-style: italic;
 }
@@ -221,6 +241,14 @@ header {
   flex-direction: column;
   align-items: center;
   background-color: white;
+}
+@media (max-width: 500px) {
+  .portfolio {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-left: 150px;
+  }
 }
 .portfolio h1 {
   font-family: Noto Sans, sans-serif;
@@ -263,6 +291,14 @@ header {
   background-color: yellowgreen;
   margin: 60px;
 }
+@media (max-width: 500px) {
+  .contact {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-left: 150px;
+  }
+}
 .contact h1 {
   font-family: Noto Sans, sans-serif;
   font-weight: 700;
@@ -295,6 +331,14 @@ footer {
   margin: 60px;
   border-top: solid 1px white;
   border-bottom: solid 2px white;
+}
+@media (max-width: 500px) {
+  footer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-left: 150px;
+  }
 }
 footer h1 {
   font-family: Noto Sans, sans-serif;
