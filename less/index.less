@@ -57,6 +57,13 @@ html, body {
 	height: 100%;
 }
 
+body {
+  margin-left: 125px;
+  margin-right: 125px;
+  line-height: 1.5;
+  background-color: lightgreen;
+}
+
 @h1-color: white;
 @h2-color: black;
 @h3-color: black;
@@ -65,15 +72,37 @@ html, body {
 @radius: 60px;
 @style: 2px solid black;
 
+
+
+.nav nav {
+  width: 100%;
+  margin: .625em;
+  display: flex;
+  box-sizing: border-box;
+  ul {
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    padding: auto;
+    margin-top: auto;
+    margin-bottom: 0;
+    list-style-type: none;
+     a {
+        font-size: .875em;
+        @noto();
+        font-weight: 300;
+        text-decoration: none;
+        color: @h2-color;
+    }
+  }
+}
+
 .banner-text {
   display: flex;
   position: relative;
     .text {
       display: inline-block;
       position: absolute;
-      left: 50%;
-      right: 50%;
-      transform: translate(-50%, -50%);
         h1 {
           @balsamiq();
           font-size: 60px;
@@ -91,17 +120,23 @@ header {
 .banner-text img {
   width: 1000px;
   height: 300px;
+  margin-bottom: 50px;
+  @media (max-width: 500px) {
+    width: 500px;
+    height: 150px;
+  }
 }
 
 .about {
   display: flex;
   flex-direction: column;
   align-items: center;
-  flex-wrap: wrap;
-  align-content: space-around;
+  background-color: lightcoral;
+  margin-left: 250px;
+  margin-right: 250px;
     h1 {
       @noto();
-      font-weight: 700;
+      font-size: 30px;
     }
       h2 {
         @noto();
@@ -110,24 +145,35 @@ header {
         p {
           @noto();
           font-weight: 300;
+          text-align: center;
+          padding: 100px;
         }
+}
+
+.about h3 {
+  font-style: italic;
 }
 
 .portfolio {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: white;
     h1 {
       @noto();
       font-weight: 700;
+      padding: 50px;
     }
       h3 {
         @noto();
         font-weight: 300;
+        font-style: italic;
       }
         p {
           @noto();
           font-weight: 300;
+          text-align: center;
+          padding: 20px;
         }
 }
 
@@ -138,7 +184,7 @@ header {
     h1 {
       @noto();
       font-weight: 700;
-    }
+  }
       h3 {
         @noto();
         font-weight: 300;
@@ -146,6 +192,7 @@ header {
         p {
           @noto();
           font-weight: 300;
+          text-align: center;
         }
 }
 
@@ -153,14 +200,24 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: yellowgreen;
+  margin: 60px;
     h1 {
       @noto();
       font-weight: 700;
+      color: white;
     }
       p {
         @noto();
         font-weight: 300;
+        text-align: center;
+        padding: 10px;
       }
+}
+
+.contact {
+  border-top: solid 1px white;
+  border-bottom: solid 2px white;
 }
 
 .about img {
@@ -173,25 +230,6 @@ header {
   border: @style;
 }
 
-nav {
-    width: 100%;
-    margin: .625em;
-    display: flex;
-    box-sizing: border-box;
-    ul {
-      display: flex;
-      justify-content: space-around;
-      width: 80%;
-      padding: auto;
-      margin-top: auto;
-      margin-bottom: 0;
-      list-style-type: none;
-       a {
-          font-size: .875em;
-          @noto();
-          font-weight: 300;
-          text-decoration: none;
-          color: @h2-color;
-      }
-    }
+footer {
+  .contact();
 }
